@@ -1,91 +1,182 @@
-*{
+/* *Normalizamos y empleamos box-sizing */
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+/* & BODY */
+body {
+	background-image: url("../img/background/01.png");
+	background-repeat: repeat;
 
-.fondo{
+}
+/* & Estilos para la imagen banner de fondo */
+.fondo {
 	background-image: url(../img/design1_image2.jpg);
 	background-repeat: no-repeat;
-	padding:20px;
-	margin-top: 100px;
+	padding: 20px;
+	margin-top: 110px;
 	margin-left: 20px;
 	margin-right: 20px;
-	position: 30px 50px;
 	object-fit: contain;
 	height: 450px;
-
+	border-radius: 15px 15px 0px 0px;
 }
-.logo{
-	width: 150px;
-	float: inline-start;
+/* ?Elegimos el posicionamiento de nuestro logo */
+.logo {
+	width: 170px;
 	position: absolute;
-	bottom: -40px; left: 40px;
-
+	bottom: -40px;
+	left: 40px;
+	top: 610px;
 }
-
-.title{
-	float: left; 
+/* & Estilo del titulo h1  */
+.title {
+	float: left;
 	position: absolute;
-	top: 50px;
-	left: 19px;
+	top: 35px;
+	left: 25px;
 	padding-bottom: 1px;
-	color: #321906;;
-	font-family: 'Mulish', sans-serif;
-	font-size: 40px;
-	font-style:inherit;
-	letter-spacing: 4px;
+	color: #080400;
+	font-family: 'Outfit', sans-serif;
+	font-size: 55px;
+	font-style: bold;
+	letter-spacing: 2px;
+	text-decoration: underline;	
+	text-shadow: rgb(219, 151, 3) 2px 2px;/* & color | offset-x | offset-y */
 }
-.title-2{
+/* & titulo del h2 */
+.title-2 {
 	display: block;
 	text-align: center;
-	background-color: #140a03;
+	background-color: #0e0803;
 	color: #ffee2b;
-	margin-left: 20px;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: 25px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 45px;
 	word-spacing: 2px;
-	width: 1332px;
-
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 5px;
 }
 
-.btn{
-	display: inline;
-	position: relative;
+.navegador {
+	display: float;
+	position: absolute;
 	top: 70px;
-	right: 10px;
-	color: #321906;;
-	font-size: 20px;
-	font-style:inherit;
-	letter-spacing: 4px;
+	right: 20px;
+}
+
+.btn {
+	color: #321906;
+	font-size: 18px;
+	font-style: inherit;
+	letter-spacing: 2px;
 	text-align: center;
 	font-family: 'Franklin Gothic Medium', "Sans-serif";
 	margin: 3px;
 	padding: 5px;
 	border: 1px solid #8c8377;
 	background-color: #ffee2b;
+	text-transform: uppercase;
+
 }
 
-a:hover{
-	color:#fffaf2;
+a:hover {
+	color: #fffaf2;
 	background-color: #321906;
 	border-radius: 9px;
 }
 
-a{
+a {
 	text-decoration: none;
-	
-}
-.color1 {color: #ffee2b;}
-.color2 {color: #fffb53;}
-.color3 {color: #321906;}
-.color4 {color: #8c8377;}
-.color5 {color: #fffaf2;}
 
-.estado{
+}
+
+.color1 {
+	color: #ffee2b;
+}
+
+.color2 {
+	color: #fffb53;
+}
+
+.color3 {
+	color: #321906;
+}
+
+.color4 {
+	color: #8c8377;
+}
+
+.color5 {
+	color: #fffaf2;
+}
+
+.estado {
 	display: none;
 }
 
-.container{
+.wrapped {
+	height: 75%;
+	width: 100%;
+	background-color: #140a03;
+	padding: 25px;
 
+}
+
+.container {
+	display: block;
+	background-color: antiquewhite;
+	border: 2px solid rgb(247, 195, 128);
+	border-radius: 5px;
+	margin-right: 200px;
+	margin-left: 250px;
+	margin-top: 15px;
+	padding: 12px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	display: block;
+	text-align: left;
+	color: rgb(7, 19, 78);
+	font-family: serif;
+	font-size: 30px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 15px;
+}
+
+.parrafo {
+	display: block;
+	text-align: left;
+	color: rgb(7, 19, 78);
+	font-family: serif;
+	font-size: 25px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-left: 6px solid red;
+}
+
+.espaciado {
+	margin-bottom: 150px;
+}
+
+.beatiful-footer {
+	position: absolute;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 44px;
+	padding-top: 44px;
+	border-bottom: 200px solid #020944;
+	width: 100%;
+	color: #15008b;
+	font-size: 20px;
+	background-color: #fffb53;
+}
+
+.icon {
+	width: 2px;
 }
