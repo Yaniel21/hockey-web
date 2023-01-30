@@ -28,7 +28,7 @@ body {
 	position: absolute;
 	bottom: -40px;
 	left: 40px;
-	top: 600px;
+	top: 590px;
 }
 /* & Estilo del titulo h1  */
 .title {
@@ -123,19 +123,21 @@ body {
 .parrafo {
 	display: block;
 	text-align: left;
-	color: rgb(0, 2, 12);
-	font-family: 'Lato', sans-serif;
+	color: #010242;
+	font-family: "Lato", sans-serif;
 	font-size: 18px;
 	margin-right: 20px;
 	margin-left: 20px;
 	padding: 15px;
 	margin-bottom: 20px;
+	line-height: 1.5;
+	text-align: justify;
 	
 }
-.parrafo:hover{
+.efecto:hover{
 	border-left: 6px solid #e20d14;
 	background: linear-gradient(to right, #ffed2ba8 40%, antiquewhite);
-	color: #000122;
+	color: #010242;
 	
 }
 /* & espaciado de los contenidos del main*/
@@ -179,4 +181,18 @@ body {
 	color: #010242;
 	margin: 15px;
 	
+}
+.contact {
+	display: block;
+	text-align: left;
+	color: #010242;
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+.sangria{
+	text-indent: 1cm;
 }
