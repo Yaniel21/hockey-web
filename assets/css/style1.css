@@ -1,50 +1,211 @@
-/* *{
+/* *Normalizamos y empleamos box-sizing */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* & BODY */
+body {
+	background-image: url("../img/background/15.png"); 
+	background-repeat: repeat; 
 
 }
-
-body{
-	background-color: #b2b2b2;
-	background-color: rgba(0, 0, 0, .3);
-} */
-
-.logo{
-	width: 100px;
-}
-/* 
-header{
-	background-color: bisque;
-	background-image: url("../img/design1_image1.jpg");
-	height: max-content;
+/* & Estilos para la imagen banner de fondo */
+.fondo {
+	background-image: url(../img/design1_image1.jpg);
 	background-repeat: no-repeat;
-	display: block;
-	float: center;
-
-
-} */
-
-.title{
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 45px;
-	margin-top: 0%;
-	text-align: left;
+	padding: 20px;
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+	object-fit: contain;
+	height: 350px;
+	margin-bottom: 10px;
 }
-
-
-nav>a{
-	text-decoration: none;
-	color: darkblue;
+/* ?Elegimos el posicionamiento de nuestro logo */
+.logo {
+	display: inline;
+	width: 110px;
+	position: absolute;
+	right:130px;
+	top: 380px;
+	background-color: whitesmoke;
+	border: 3px solid darkcyan;
+	z-index: 1;
+}
+/* & Estilo del titulo h1  */
+.title {
+	float: left;
+	position: absolute;
+	left: 40px;
+	top: 90px;
+	color: #F8E12E;
+	font-family: 'Anton', sans-serif;
+	font-size: 55px;
+	letter-spacing: 5px;
+	text-shadow: darkcyan -5px 2px ;/* & color | offset-x | offset-y */
 	text-transform: uppercase;
-	font-family: Verdana;
-	margin: 10px;
-	padding: 15px;
-	border-color: bisque;
-	position:float left;
 }
 
-nav{
-	display: flex;
-	background-color: blueviolet;
-	width: 200px;
-	height: 285px;
-}
+/* & Barra de navegación contenedor*/
+.navegador {
+width: 150px;
+height: 130px;
+background-color: #fffc5352;
+margin-top: 415px;
+position: absolute;
+left: 25px;
 
+}
+/* & Botones de navegación y efectos */
+.btn {
+	color: whitesmoke; 
+	font-size: 15px;
+	letter-spacing: 2px;
+	text-align: center;
+	font-family: 'Outfit', "Sans-serif";
+	margin: 5px;
+	padding: 7px;
+	border: 2px solid whitesmoke ;
+	background-color: #008b8b;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 2px;
+	
+}
+.btn:hover {
+	color: #010242;
+	background-color: #ffee2b;;
+}
+/* & titulo del h2 - Eventos próximos*/
+.title-2 {
+	width: 1308px;
+	text-align: center;
+	background-color: darkcyan;
+	color: whitesmoke;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 30px;
+	word-spacing: 4px;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	display: inline-block;
+	position: absolute;
+	margin-bottom: 13px;
+	top: 410px;
+}
+/* & Elemento oculto*/
+.estado {
+	display: none;
+}
+/* & Envoltorio de los elementos del section*/
+.wrapped {
+	height: 90%;
+	width: 1308px;
+	background: #24C6DC;  /* fallback for old browsers */
+	background: linear-gradient(to bottom, whitesmoke,#008b8b82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-bottom: 10px;
+	margin-left: 20px;
+	margin-top: 63px;
+	padding-top: 15px;
+
+}
+/* & Envoltorio de los elementos del section*/
+.container {
+	display: block;
+	margin-right: 250px;
+	margin-left: 180px;
+	margin-top: 20px;
+	padding: 10px;
+	margin-bottom: 5px;
+	width: 900px;
+	border-left: 3px solid #008b8b;
+}
+/* & titulo de los articles*/
+.title-3 {
+	display: block;
+	text-align: left;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	margin-left: 20px;
+	padding: 5px;
+}
+/* & parrafos y efecto de posicionamiento*/
+.parrafo {
+	display: block;
+	text-align: left;
+	color: #010242;
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 5px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+	text-align: justify;
+	
+	
+}
+.efecto:hover{
+	background: linear-gradient(to right, #008b8b6c 30%, rgba(250, 235, 215, 0.158));
+	color: black;
+}
+/* & espaciado de los contenidos del main*/
+.espaciado {
+	margin-bottom: 25px;
+	width: 60%;
+	display: grid;
+}
+/* & estilos del footer*/
+.beatiful-footer {
+	position: absolute;
+	padding-left: 90px;
+	padding-right: 100px;
+	padding-bottom: 44px;
+	padding-top: 30px;
+	border-bottom: 90px solid #008b8b;
+	width: 100%;
+	height: 260px;
+	background-color: #fffc5352;
+	margin-top: 20px;
+	
+}
+.title-4{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 30px;
+	margin-bottom: 10px;
+	text-align: left;
+	color: #033b3b;
+	display: block;
+	margin-left: 10px;
+}
+.contenedor-2{
+ width: max-content;
+ position: absolute;
+ justify-content: center;
+ left: 200px;
+ border-left: 6px solid #008b8b;
+}
+.contenedor-icon{
+	display: inline-block;
+	text-decoration: none;
+}
+.icons{
+	color: #008b8b;
+	margin: 15px;
+}
+.contact {
+	display: block;
+	text-align: left;
+	color: #010242;
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+.sangria{
+	text-indent: 1cm;
+}
