@@ -141,8 +141,7 @@ body {
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	align-items: strech;
-}
+	}
 
 /* & titulo de los articles*/
 .title-3 {
