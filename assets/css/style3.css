@@ -4,135 +4,162 @@
 	margin: 0;
 	padding: 0;
 }
+
 /* & BODY */
 body {
-	background: linear-gradient(to right, #8e9eab, #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #8e9eab, #eef2f3);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 /* & Estilos para la imagen banner de fondo */
 .fondo {
 	background-image: url(../img/recorte.jpg);
 	background-repeat: no-repeat;
 	padding: 20px;
-	margin-top: 70px;
+	margin-top: 100px;
 	margin-left: 50px;
 	margin-right: 50px;
 	object-fit: cover;
 	height: 250px;
 	margin-bottom: 10px;
 	border-radius: 9px;
+	box-shadow: 0px 0px 5px 1px black;
 }
-/* ?Elegimos el posicionamiento de nuestro logo */
-.logo {
+
+/* & Imagen del logo sin letras*/
+.img-logo-nav {
+	width: 60px;
+	padding-right: 5px;
 	display: inline-block;
-	width: 140px;
 	position: absolute;
-	left: 60px;
-	top: 400px;
+	top: 13px;
+	left: 20px;
+	z-index: 1;
+
 }
+
 /* & Estilo del titulo h1  */
 .title {
-	float: left;
-	position: absolute;
-	left: 50px;
-	top: 2px;
-	color: #f6f6f4;
+	margin-left: 70px;
+	margin-top: 15px;
+	color: #f6e352;
 	font-family: 'Anton', sans-serif;
 	font-size: 30px;
-	letter-spacing: 2px;
+	letter-spacing: 4px;
+	word-spacing: 4px;
 	text-transform: uppercase;
+	display: inline-block;
+	position: absolute;
+	top: 1px;
+	left: 20px;
 	z-index: 1;
+
 }
 
 /* & Barra de navegación contenedor*/
 .navegador {
-width: 100%;
-height: 50px;
-background-color: black;
-top: 0px;
-left: 0px;
-position: absolute;
-
+	width: 100%;
+	height: 70px;
+	background-color: black;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	;
+	align-content: flex-end;
 }
+
 /* & Botones de navegación y efectos */
 .btn {
-	color: white; 
+	color: white;
 	font-size: 15px;
 	text-align: center;
 	font-family: 'Lato', "Sans-serif";
+	font-weight: 500;
 	padding: 5px;
+	margin-right: 7px;
 	background-color: black;
 	text-transform: uppercase;
 	text-decoration: none;
-	display: inline-block;
-	position: relative;
-	margin-top: 9px;
-	margin-left: 10px;
-left: 950px;
+	align-self: center;
 }
+
 .btn:hover {
-	color: #010242;
-	background-color: #ffffff;;
+	color: black;
+	font-weight: 800;
+	background-color: #f6e352;
 }
+
+/* ?Elegimos el posicionamiento de nuestro logo */
+.logo {
+	width: 140px;
+	display: inline-block;
+	position: absolute;
+	left: 60px;
+	top: 400px;
+}
+
 /* & titulo del h2 - Eventos próximos*/
 .title-2 {
-	width: 1250px;
+	max-width: 1250px;
 	text-align: center;
-	background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #414345, #232526);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: whitesmoke;
 	font-family: 'Lato', sans-serif;
 	font-size: 25px;
 	word-spacing: 4px;
-	padding-top: 5px;
-	padding-bottom: 10px;
-	display: inline-block;
-	position: absolute;
-	margin-bottom: 5px;
-	top: 360px;
-	left: 50px;
-}
-/* & Elemento oculto*/
-.estado {
-	display: none;
-}
-/* & Envoltorio de los elementos del section*/
-.wrapped {
-	height: 90%;
-	width: 1250px;
-	background: whitesmoke;  /* fallback for old browsers */
-    padding-bottom: 10px;
-	margin-left: 50px;
-	margin-top: 63px;
-	padding-top: 15px;
-	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.482);
 
 }
+
+/* & Envoltorio de los elementos del section*/
+.wrapped {
+	max-width: 1250px;
+	min-height: 200px;
+	background: whitesmoke;
+	/* fallback for old browsers */
+	padding-bottom: 10px;
+	margin-top: 5px;
+	padding-top: 15px;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.482);
+}
+
 /* & Envoltorio de los elementos del section*/
 .container {
-	display: block;
+	width: 1250px;
 	margin-right: 250px;
 	margin-left: 180px;
 	margin-top: 20px;
 	padding: 10px;
 	margin-bottom: 5px;
-	width: 900px;
 	border-left: 3px solid #414646;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: strech;
 }
+
 /* & titulo de los articles*/
 .title-3 {
-	display: block;
 	text-align: left;
 	color: black;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 25px;
 	margin-left: 20px;
 	padding: 5px;
+
 }
+
 /* & parrafos y efecto de posicionamiento*/
 .parrafo {
-	display: block;
-	text-align: left;
-	color: black;
+	color: rgb(5, 125, 125);
 	font-family: "Lato", sans-serif;
+	font-weight: 600;
 	font-size: 18px;
 	margin-right: 20px;
 	margin-left: 20px;
@@ -140,18 +167,66 @@ left: 950px;
 	margin-bottom: 10px;
 	line-height: 1.5;
 	text-align: justify;
-	
-	
+
 }
-.efecto:hover{
+
+/* !seccion de ABOUT */
+.container-about {
+	margin-left: 150px;
+	margin-top: 20px;
+	padding: 10px;
+	margin-bottom: 5px;
+	border-left: 3px solid #414646;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: center;
+}
+
+.titulo-about {
+	text-align: left;
+	color: rgb(12, 188, 174);
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	margin-left: 20px;
+	padding: 5px;
+	text-shadow: rgba(0, 0, 0, 0.302) 1px 1px;
+	/* & color | offset-x | offset-y */
+}
+
+.parrafo-about {
 	color: black;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 5px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+	text-align: justify;
+
+	flex-basis: 50px;
 }
+
+.efecto:hover {
+	color: rgb(12, 188, 150);
+	text-shadow: rgba(0, 0, 0, 0.5) 1px 1px;
+	/* & color | offset-x | offset-y */
+}
+
 /* & espaciado de los contenidos del main*/
 .espaciado {
 	margin-bottom: 25px;
-	width: 60%;
-	display: grid;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
 }
+
 /* & estilos del footer*/
 .beatiful-footer {
 	position: absolute;
@@ -164,9 +239,10 @@ left: 950px;
 	height: 260px;
 	background-color: black;
 	margin-top: 20px;
-	
+
 }
-.title-4{
+
+.title-4 {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 30px;
 	margin-bottom: 10px;
@@ -175,21 +251,25 @@ left: 950px;
 	display: block;
 	margin-left: 10px;
 }
-.contenedor-2{
- width: max-content;
- position: absolute;
- justify-content: center;
- left: 200px;
- border-left: 6px solid white;
+
+.contenedor-2 {
+	width: max-content;
+	position: absolute;
+	justify-content: center;
+	left: 200px;
+	border-left: 6px solid white;
 }
-.contenedor-icon{
+
+.contenedor-icon {
 	display: inline-block;
 	text-decoration: none;
 }
-.icons{
+
+.icons {
 	color: whitesmoke;
 	margin: 15px;
 }
+
 .contact {
 	display: block;
 	text-align: left;
@@ -201,17 +281,204 @@ left: 950px;
 	padding: 10px;
 	margin-bottom: 5px;
 }
-.sangria{
+
+.sangria {
 	text-indent: 1cm;
 }
+
 /* & ESTILO PARA TABLAS */
-.table{
+.container-table{
+	margin-top: 10px;
+	margin-bottom: 50px;
+
+}
+
+.table {
 	border-collapse: collapse;
 	border-spacing: 4px;
 	background-color: whitesmoke;
+	border-spacing: 15px;
+	margin-left: 50px;
 }
+
 th,
 td {
-  border: 1px solid #071e95;
-  padding: 10px 15px;
+	
+	padding: 10px 2px;
+	vertical-align: middle;
+	text-align: center;
+	border-spacing: 15px;
+	min-width: 200px;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 1.5;
+  }
+
+
+
+  thead {
+	background: #0CBCAE;
+	background: linear-gradient(#0CBCAE, #293f50);
+	color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	padding: 5px;
+	text-shadow: rgba(0, 0, 0, 0.63) 1px 1px;
+	/* & color | offset-x | offset-y */
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 4px;
+	
+  }
+  th:first-child {
+	border-top-left-radius: 5px;
+	text-align: center;
+  }
+  th:last-child {
+	border-top-right-radius: 5px;
+  }
+  tbody tr:nth-child(even) {
+	background: #0cbcad59;
+  }
+  td {
+	border-bottom: 2px solid  #046a62e4;
+	border-right: 2px solid  #046a62e4;
+  }
+  td:first-child {
+	border-left: 2px solid  #046a62e4;
+  }
+
+  /* & parrafos finales y texto de game information */
+  .span-game{
+	margin-left:10px;
+	padding:5px;
+	color:black;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: justify;
+	text-shadow: rgba(0, 0, 0, 0.649) 1px 1px;
+	/* & color | offset-x | offset-y */
+
+  }
+.parrafo-game{
+	color: black;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: justify;
+}
+.cursiva{
+	font-style: oblique;
+	text-decoration: underline;
+	margin: 20px 15px;
+	font-weight: 600;
+}
+.oblique{
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: oblique;
+	font-weight: 600;
+	font-size: 30px;
+	margin-left: 15px;
+}
+/* *RULES ANDO POLITIQUES  */
+.container-rules{
+	margin-left: 150px;
+	margin-top: 20px;
+	padding: 10px;
+	margin-bottom: 5px;
+	border-left: 3px solid #414646;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: center;
+}
+.titulo-principal-rules{
+	text-align: left;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 40px;
+	padding: 5px;
+	padding-left: 225px;
+}
+
+.title-rules{
+	text-align: left;
+	color: rgb(12, 188, 174);
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	margin-left: 20px;
+	padding: 5px;
+	text-shadow: rgba(0, 0, 0, 0.302) 1px 1px;
+	/* & color | offset-x | offset-y */
+}
+.parrafo-rules{
+	color: black;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 5px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+	text-align: justify;
+
+	flex-basis: 50px;
+}
+.lista-ol-rules{
+margin-left: 20px;
+font-size: 1rem;
+font-family: "Lato", sans-serif;
+font-weight: 600;
+
+}
+
+.sub-lista{
+	color: black;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 5px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+	text-align: justify;
+	margin-left: 50px;
+	font-size: 1rem;
+
+}
+.lista-ul-rules{
+	color: black;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	margin-right: 20px;
+	padding: 5px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+	text-align: justify;
+	margin-left: 50px;
+	font-size: 1rem;
+	list-style: circle;
+	
+}
+
+.span-rules{
+	margin-left:10px;
+	padding:5px;
+	color:black;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: justify;
+	text-shadow: rgba(0, 0, 0, 0.649) 1px 1px;
+	/* & color | offset-x | offset-y */
 }

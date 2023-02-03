@@ -1,86 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Hojas de estilo 1 -->
+	<!--   <link rel="stylesheet" href="./assets/css/style1.css"> -->
+
+	<!-- Hola de estilo 2 -->
+	<!-- <link rel="stylesheet" href="./assets/css/style2.css"> -->
+
+	<!-- Hoja de estilo 3 -->
 	<link rel="stylesheet" href="./assets/css/style3.css">
-	<title>Game Information</title>
+
+	<!-- Fuentes -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Outfit:wght@900&display=swap"
+		rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+	<!-- & iconos -->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<title>Mighty Ducks Hockey League Game Shedule</title>
+
+	<!-- * icono de la página -->
+	<link rel="shortcut icon" href="./assets/img/logo-mini.ico">
 </head>
+
 <body>
-	<section>
-		<h1>Elaboracion de la tabla</h1>
-		
-			<table class="table">
-				<thead>
-					<tr>
-						<th>SEPTEMBER</th>
-						<th>Teams</th>
-						<th>Location</th>
-						<th>Times</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td rowspan="2">9/01</td>
-						<td>U1 and U4</td>
-						<td>AJ Katzanmaier</td>
-						<td>9:30 a.m.</td>
-					</tr>
-					<tr>
-						<td>U3 and U2</td>
-						<td>Greenbay</td>
-						<td>1:00 p.m.</td>
-					</tr>
-					<tr>
-						<td rowspan="2">9/08</td>
-						<td>U5 and U6</td>
-						<td>Howard a Yeager</td>
-						<td>9:30 a.m.</td>
-					</tr>
-					<tr>
-						<td>U6 and U1</td>
-						<td>Marjorie P Hart</td>
-						<td>1:00 p.m.</td>
-					</tr>
-					
-					<tr>
-						<td rowspan="2">9/15</td>
-						<td>U2 and U4</td>
-						<td>North</td>
-						<td>9:30 a.m.</td>
-					</tr>
-					<tr>
-						<td>U3 and U5</td>
-						<td>AJ Katzanmaier</td>
-						<td>1:00 p.m.</td>
-					</tr>
-					<tr>
-						<td rowspan="2">9/22</td>
-						<td>U1 and U3</td>
-						<td>South</td>
-						<td>9:30 a.m.</td>
-					</tr>
-					<tr>
-						<td>U2 and U6</td>
-						<td>Howard A Yeager</td>
-						<td>1:00 p.m.</td>
-					</tr>
-					<tr>
-						<td>9/29</td>
-						<td>U4 and U5</td>
-						<td>Greenbay</td>
-						<td>9:30 a.m.</td>
-					</tr>
-				</tbody>
-			</table>
-	</section>
-<div>
-			<p><span>Facility Type:</span> Outdoor</p>
-			<p><span>Additional Information:</span> If deemed necessary by MDHL games may be shortened or cancelled due to extreme weather conditiones. </p>
-			<p><span>Pleace direct all questions to:</span> Michael Randall, League Coordinator</p>
-			<p><span>Phone</span> (630) 690-8132</p>
-			<p><span>Email:</span> michael.randall@chihockey.org</p>
-</div>
+	<header class="fondo">
+		<figure>
+			<img src="./assets/img/Logo.png" alt="logo de pato" class="logo">
+		</figure>
+		<nav class="navegador">
+			<figure>
+				<img src="./assets/img/logo_nav.png" alt="logo sin letras" class="img-logo-nav">
+			</figure>
+			<h1 class="title">Mighty Ducks Hockey League</h1>
+			<a href="./index.html" class="btn">Home</a>
+			<a href="./about.html" class="btn">About MDHL</a>
+			<a href="./rules.html" class="btn">rules and policies</a>
+			<a href="#" class="btn">game schedule</a>
+			<a href="./contact.html" class="btn">contact</a>
+		</nav>
+	</header>
+
+	<main class="espaciado">
+		<section class="wrapped">
+			<h1 class="title-2">Mighty Ducks Hockey League</h1>
+			<div class="container">
+				<div class="container-table">
+					<p class="oblique">Fall shedule</p>
+					<p class="parrafo-game cursiva">* All games take place on Saturday</p>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>SEPTEMBER</th>
+								<th>Teams</th>
+								<th>Location</th>
+								<th>Times</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="2">9/01</td>
+								<td>U1 and U4</td>
+								<td>AJ Katzanmaier</td>
+								<td>9:30 a.m.</td>
+							</tr>
+							<tr>
+								<td>U3 and U2</td>
+								<td>Greenbay</td>
+								<td>1:00 p.m.</td>
+							</tr>
+							<tr>
+								<td rowspan="2">9/08</td>
+								<td>U5 and U6</td>
+								<td>Howard a Yeager</td>
+								<td>9:30 a.m.</td>
+							</tr>
+							<tr>
+								<td>U6 and U1</td>
+								<td>Marjorie P Hart</td>
+								<td>1:00 p.m.</td>
+							</tr>
+
+							<tr>
+								<td rowspan="2">9/15</td>
+								<td>U2 and U4</td>
+								<td>North</td>
+								<td>9:30 a.m.</td>
+							</tr>
+							<tr>
+								<td>U3 and U5</td>
+								<td>AJ Katzanmaier</td>
+								<td>1:00 p.m.</td>
+							</tr>
+							<tr>
+								<td rowspan="2">9/22</td>
+								<td>U1 and U3</td>
+								<td>South</td>
+								<td>9:30 a.m.</td>
+							</tr>
+							<tr>
+								<td>U2 and U6</td>
+								<td>Howard A Yeager</td>
+								<td>1:00 p.m.</td>
+							</tr>
+							<tr>
+								<td>9/29</td>
+								<td>U4 and U5</td>
+								<td>Greenbay</td>
+								<td>9:30 a.m.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div>
+					<p class="parrafo-game"><span class="span-game">Facility Type:</span> Outdoor</p>
+					<p class="parrafo-game"><span class="span-game">Additional Information:</span> If deemed necessary by MDHL games may be shortened or
+						cancelled due to extreme weather conditiones. </p>
+					<p class="parrafo-game"><span class="span-game">Pleace direct all questions to:</span> Michael Randall, League Coordinator</p>
+					<p class="parrafo-game"><span class="span-game">Phone</span> (630) 690-8132</p>
+					<p class="parrafo-game"><span class="span-game">Email:</span> michael.randall@chihockey.org</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="beatiful-footer">
+		<section class="contenedor-2">
+			<h4 class="title-4">Our social media</h4>
+			<a href="#" class="contenedor-icon"><i class="fa fa-facebook-official fa-3x icons"
+					aria-hidden="true"></i></a>
+			<a href="#" class="contenedor-icon"><i class="fa fa-instagram fa-3x icons" aria-hidden="true"></i></a>
+			<a href="#" class="contenedor-icon"><i class="fa fa-twitter-square fa-3x icons" aria-hidden="true"></i></a>
+		</section>
+	</footer>
 </body>
+
 </html>
