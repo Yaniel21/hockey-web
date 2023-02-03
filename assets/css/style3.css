@@ -204,3 +204,14 @@ left: 950px;
 .sangria{
 	text-indent: 1cm;
 }
+/* & ESTILO PARA TABLAS */
+.table{
+	border-collapse: collapse;
+	border-spacing: 4px;
+	background-color: whitesmoke;
+}
+th,
+td {
+  border: 1px solid #071e95;
+  padding: 10px 15px;
+}
