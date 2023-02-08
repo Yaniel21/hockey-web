@@ -481,3 +481,63 @@ font-weight: 600;
 	text-shadow: rgba(0, 0, 0, 0.649) 1px 1px;
 	/* & color | offset-x | offset-y */
 }
+/* *	FORMULARIO RESGISTRATION  */
+.container-form-wrapped{
+	display:flex;
+	background-color: #0cbcad9d;
+	padding: 10px;
+	margin: 7px;
+
+}
+
+.datos-personales{
+	border: 1px solid rgba(0, 0, 0, 0.483);
+	margin: 10px;
+	padding: 15px;
+	width: 800px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+
+}
+.label-font{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	padding: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.input-font{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	padding: 2px;
+}
+.input-size{
+	width: 612px;
+}
+
+.label-font-small{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+	padding: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* *seccion de mostrar elementos enviados del formulario */
+
+.borde-superior-tabla{
+	background: #0CBCAE;
+	background: linear-gradient(#0CBCAE, #293f50);
+	color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	padding: 5px;
+	text-shadow: rgba(0, 0, 0, 0.63) 1px 1px;
+	/* & color | offset-x | offset-y */
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 4px;
+}
