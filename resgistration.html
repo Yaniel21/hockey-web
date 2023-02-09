@@ -47,11 +47,11 @@
 			</figure>
 			<h1 class="title">Mighty Ducks Hockey League</h1>
 			<a href="./index.html" class="btn">Home</a>
-            <a href="./about.html" class="btn">About MDHL</a>
-            <a href="./rules.html" class="btn">rules</a>
-            <a href="./game-information.html" class="btn">game schedule</a>
-            <a href="./contact.html" class="btn">contact</a>
-            <a href="#" class="btn">registration</a>
+			<a href="./about.html" class="btn">About MDHL</a>
+			<a href="./rules.html" class="btn">rules</a>
+			<a href="./game-information.html" class="btn">game schedule</a>
+			<a href="./contact.html" class="btn">contact</a>
+			<a href="#" class="btn">registration</a>
 		</nav>
 	</header>
 
@@ -63,193 +63,215 @@
 				<section>
 					<h2 class="titulo-principal-rules">Registration Form</h2>
 					<p class="parrafo-rules">Complete the following player registration form.</p>
-					<article>
-						<div class="container-form-wrapped">
-							<form action="/show_data.html" method="get">
-								<!-- *Datos personales -->
+					<!-- 		<article> -->
+					<div class="container-form-wrapped">
+						<form action="/show_data.html" method="get">
+							<!-- *Datos personales -->
 
-								<div class="datos-personales">
-									<label for="first-name" class="label-font">Player's first Name
-										<input type="text" name="first-name" id="first-name" class="input-font">
-									</label>
+							<div class="datos-personales">
+								<label for="first-name" class="label-font">Player's first Name
+									<input type="text" name="first-name" id="first-name" class="input-font">
+								</label>
+								
 
-									<label for="last-name" class="label-font">Last Name
-										<input type="text" name="last-name" id="last-name" class="input-font">
-									</label>
+								<label for="last-name" class="label-font">Last Name 
+									<input type="text" name="last-name" id="last-name" class="input-font">
+								</label>
+								
 
-									<label for="street-adress" class="label-font">Street Adress
-									<input type="text" name="street-adress" id="street-adress"
-											class="input-font input-size">
-									</label>
+								<label for="street-adress" class="label-font">Street Adress
+									<input type="text" name="street-adress" id="street-adress" class="input-font">
+								</label>
+								
 
-									<label for="city" class="label-font">City
-										<input type="text" name="city" id="city" class="input-font">
-									</label>
+								<label for="city" class="label-font">City
+									<input type="text" name="city" id="city" class="input-font">
+								</label>
+								
 
-									<label for="zip-code" class="label-font">Zip Code
-										<input type="text" name="zip-code" id="zip-code" class="input-font">
-									</label>
+								<label for="zip-code" class="label-font">Zip Code
+									<input type="text" name="zip-code" id="zip-code" class="input-font">
+								</label>
+								<label for="date" class="label-font-radio">Date
+									<input type="date" name="date" id="date" class="input-font-radio">
+								</label>
+							</div>
+						
 
-									<label for="date" class="label-font">Date
-										<input type="date" name="date" id="date" class="input-font">
-									</label>
+							<div class="datos-personales">
+								<fieldset class="contenedor-invisible">
+									<h3 class="title-font">Gender</h3>
+									<div class="gender-check">
+										<label for="gender-female" class="label-font-small">Female</label>
+										<input type="radio" name="gender" id="gender-female" value="Female"
+												class="">
 
-									<h2>Gender</h2>
-									<label for="gender-female" class="label-font-small">Female
-										<input type="radio" name="gender" id="gender-female" value="Female">
-									</label>
+									</div>
+									
+									<div class="gender-check">
 
-									<label for="gender-male" class="label-font-small">Male
-										<input type="radio" name="gender" id="gender-male" value="Male">
-									</label>
+										<label for="gender-male" class="label-font-small">Male</label>
+										<input type="radio" name="gender" id="gender-male" value="Male"
+										class="">
+									</div>
 
-									<!-- * grado -->
-									<fieldset>
-										<h2>Grade</h2>
+								</fieldset>
+							</div>
+							<div class="datos-personales">
+								<!-- * grado -->
+
+								<fieldset class="contenedor-invisible">
+									<h2 class="title-font">Grade</h2>
+									<div class="gender-check">
 										<label for="pre-school" class="label-font">Pre-school
-											<input type="radio" name="grade" value="pre-school" id="pre-school">
+						
 										</label>
-										<label for="1-first" class="label-font-small">1first</label>
-										<input type="radio" name="grade" value="1first" id="1-first">
+	
+										<input type="radio" name="grade" value="pre-school" id="pre-school"
+										class="">
+	
+									</div>
+									
+			
 
-										<label for="2-nd" class="label-font-small">2nd</label>
-										<input type="radio" name="grade" value="2nd" id="2-nd">
+									<label for="1-first" class="label-font-small">1first</label>
+									<input type="radio" name="grade" value="1first" id="1-first"
+										class="">
 
-										<label for="3-rd" class="label-font-small">3rd</label>
-										<input type="radio" name="grade" value="3rd" id="3-rd">
+									<label for="2-nd" class="label-font-small">2nd</label>
+									<input type="radio" name="grade" value="2nd" id="2-nd"
+										class=".input-font-radius-checkbox">
 
-										<label for="4-th" class="label-font-small">4th</label>
-										<input type="radio" name="grade" value="4th" id="4-th">
+									<label for="3-rd" class="label-font-small">3rd</label>
+									<input type="radio" name="grade" value="3rd" id="3-rd"
+										class=".input-font-radius-checkbox">
 
-										<label for="5-th" class="label-font-small">5th</label>
-										<input type="radio" name="grade" value="5th" id="5-th">
-									</fieldset>
+									<label for="4-th" class="label-font-small">4th</label>
+									<input type="radio" name="grade" value="4th" id="4-th"
+										class=".input-font-radius-checkbox">
 
-									<fieldset class="datos-personales">
-										<h2>Wich elementary scholl do lou live near?</h2>
-										<h3>Closets School</h3>
-										<!-- *colocar la clase correspondiente -->
-										<div class="">
-											<input type="checkbox" name="school" id="aj_katzen" value="AJ Katzen">
-											<label class="label-font" for="aj_katzen">AJ Katzen</label>
+									<label for="5-th" class="label-font-small">5th</label>
+									<input type="radio" name="grade" value="5th" id="5-th"
+										class=".input-font-radius-checkbox">
 
-											<input type="checkbox" name="school" id="greenbay" value="Greenbay">
-											<label class="label-font" for="greenbay">Greenbay</label>
-
-											<input type="checkbox" name="school" id="howard" value="Howard A Yeager">
-											<label class="label-font" for="howard">Howard A Yeager</label>
-
-											<input type="checkbox" name="school" id="marjorie" value="Marjorie P Hart">
-											<label class="label-font" for="marjorie">Marjorie P Hart</label>
-
-											<input type="checkbox" name="school" id="north" value="North Elementary">
-											<label class="label-font" for="north">North Elementary </label>
-
-											<input type="checkbox" name="school" id="south" value="South Elementary">
-											<label class="label-font" for="south">South Elementary</label>
-
-										</div>
-
-									</fieldset>
+								</fieldset>
 
 
-									<fieldset class="datos-personales">
-										<h2>What position(s) do you normally play?</h2>
-										<h3>(check all that apply)</h3>
-										<!-- *colocar la clase correspondiente -->
-										<div class="">
-											<input type="checkbox" name="position" id="forward" value="Forward">
-											<label class="label-font" for="forward">Forward</label>
+								<fieldset class="datos-personales">
+									<h2 class="title-font-bold">Wich elementary scholl do lou live near?</h2>
+									<p class="title-font">Closets School</p>
+									<!-- *colocar la clase correspondiente -->
+									<div class="">
+										<input type="checkbox" name="school" id="aj_katzen" value="AJ Katzen"
+											class="input-font-radius-checkbox">
+										<label class="label-font" for="aj_katzen">AJ Katzen</label>
 
-											<input type="checkbox" name="position" id="defense" value="Defense">
-											<label class="label-font" for="defense">Defense</label>
+										<input type="checkbox" name="school" id="greenbay" value="Greenbay"
+											class="input-font-radius-checkbox">
+										<label class="label-font" for="greenbay">Greenbay</label>
 
-											<input type="checkbox" name="position" id="midfield" value="Midfield">
-											<label class="label-font" for="midfield">Midfield</label>
+										<input type="checkbox" name="school" id="howard" value="Howard A Yeager"
+											class="input-font-radius-checkbox">
+										<label class="label-font" for="howard">Howard A Yeager</label>
 
-											<input type="checkbox" name="position" id="goalkeeper" value="Goalkeeper">
-											<label class="label-font" for="goalkeeper">Goalkeeper</label>
+										<input type="checkbox" name="school" id="marjorie" value="Marjorie P Hart"
+											class="input-font-radius-checkbox">
+										<label class="label-font" for="marjorie">Marjorie P Hart</label>
 
-										</div>
+										<input type="checkbox" name="school" id="north" value="North Elementary"
+											class="input-font-radius-checkbox">
+										<label class="label-font" for="north">North Elementary </label>
 
-									</fieldset>
+										<input type="checkbox" name="school" id="south" value="South Elementary"
+											class="input-font-radius-checkbox">
+										<label class="label-font" for="south">South Elementary</label>
 
-									<fieldset class="datos-personales"><!--* poner un mejor estilo -->
-										<h2>Uniform Size</h2>
-										<input type="radio" name="size" value="yes" id="youth-small">
-										<label class="label-font" for="youth-small">Youth Small</label>
+									</div>
 
-										<input type="radio" name="size" value="Youth Medium" id="youth-medium">
-										<label class="label-font" for="youth-medium">Youth Medium </label>
+								</fieldset>
 
-										<input type="radio" name="size" value="Youth Large" id="youth-large">
-										<label class="label-font" for="youth-large">Youth Large</label>
 
-										<input type="radio" name="size" value="Small" id="small">
-										<label class="label-font" for="small">Small</label>
+								<fieldset class="datos-personales">
+									<h2>What position(s) do you normally play?</h2>
+									<h3>(check all that apply)</h3>
+									<!-- *colocar la clase correspondiente -->
+									<div class="">
+										<input type="checkbox" name="position" id="forward" value="Forward">
+										<label class="label-font" for="forward">Forward</label>
 
-										<input type="radio" name="size" value="Medium" id="medium">
-										<label class="label-font" for="medium">Medium</label>
+										<input type="checkbox" name="position" id="defense" value="Defense">
+										<label class="label-font" for="defense">Defense</label>
 
-										<input type="radio" name="size" value="Large" id="large">
-										<label class="label-font" for="large">Large</label>
+										<input type="checkbox" name="position" id="midfield" value="Midfield">
+										<label class="label-font" for="midfield">Midfield</label>
 
-										<input type="radio" name="size" value="Extra Large" id="extra-large">
-										<label class="label-font" for="extra-large">Extra Large</label>
+										<input type="checkbox" name="position" id="goalkeeper" value="Goalkeeper">
+										<label class="label-font" for="goalkeeper">Goalkeeper</label>
 
-									</fieldset>
+									</div>
 
-									<fieldset>
-										<h2>Permission to Play</h2>
-										<p>
-											Permission to Play
-											I, the parent or guardian of the minor registrant, agree that the registrant
-											and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL).
-											In recognizing the possibility of physical injury associated with hockey and
-											in consideration for the “League" accepting the registrant for its hockey
-											programs and activities, I hereby release, discharge, and/or otherwise
-											indemnify MDHL, their employees and associated personnel and
-											voIunteers,incIuding the facilities used for practices and games, against
-											any claim by or on behalf of the registrant as a result of the registrant's
-											participation in the programand/orbeing transported to or from MDHL
-											sponsored activities,which transportation
-											By signing below, I herebyagree andauthorizethe above.In addition, by
-											signing below, lalso
-											acknowledge that I have read the cancellation policy and agree to its terms.
-										</p>
-										<label for="parent" class="label-font">Parent/GuardianSignature</label>
-										<input type="text" name="parent" id="parent" value="">
-										
-										<label for="date-permission">Date</label>
-										<input type="datetime-local" name="date-permission" id="date-permission">
-									</fieldset>
+								</fieldset>
 
-								</div>
+								<fieldset class="datos-personales"><!--* poner un mejor estilo -->
+									<h2>Uniform Size</h2>
+									<input type="radio" name="size" value="yes" id="youth-small">
+									<label class="label-font" for="youth-small">Youth Small</label>
 
+									<input type="radio" name="size" value="Youth Medium" id="youth-medium">
+									<label class="label-font" for="youth-medium">Youth Medium </label>
+
+									<input type="radio" name="size" value="Youth Large" id="youth-large">
+									<label class="label-font" for="youth-large">Youth Large</label>
+
+									<input type="radio" name="size" value="Small" id="small">
+									<label class="label-font" for="small">Small</label>
+
+									<input type="radio" name="size" value="Medium" id="medium">
+									<label class="label-font" for="medium">Medium</label>
+
+									<input type="radio" name="size" value="Large" id="large">
+									<label class="label-font" for="large">Large</label>
+
+									<input type="radio" name="size" value="Extra Large" id="extra-large">
+									<label class="label-font" for="extra-large">Extra Large</label>
+
+								</fieldset>
+
+								<fieldset>
+									<h2>Permission to Play</h2>
+									<p>
+										Permission to Play
+										I, the parent or guardian of the minor registrant, agree that the registrant
+										and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL).
+										In recognizing the possibility of physical injury associated with hockey and
+										in consideration for the “League" accepting the registrant for its hockey
+										programs and activities, I hereby release, discharge, and/or otherwise
+										indemnify MDHL, their employees and associated personnel and
+										voIunteers,incIuding the facilities used for practices and games, against
+										any claim by or on behalf of the registrant as a result of the registrant's
+										participation in the programand/orbeing transported to or from MDHL
+										sponsored activities,which transportation
+										By signing below, I herebyagree andauthorizethe above.In addition, by
+										signing below, lalso
+										acknowledge that I have read the cancellation policy and agree to its terms.
+									</p>
+									<label for="parent" class="label-font">Parent/GuardianSignature</label>
+									<input type="text" name="parent" id="parent" value="">
+
+									<label for="date-permission">Date</label>
+									<input type="datetime-local" name="date-permission" id="date-permission">
+								</fieldset>
 								<div>
 									<input type="submit" value="Confirmar Registro">
 								</div>
 
+							</div>
 
 
 
-
-							</form>
-						</div>
-
-					</article>
-
-
-					<article>
-						<h2 class="title-rules">ALL-PLAY</h2>
-						<p class="parrafo-rules">All-play means that every recreation player on every team shall play
-							atleast
-							fifty percent of each game. Coaches in the competition program are encouraged
-							to play their players 50% of each game.
-						</p>
-
-
-					</article>
+						</form>
+					</div>
+					<!-- 	</article> -->
 				</section>
 			</div>
 		</section>

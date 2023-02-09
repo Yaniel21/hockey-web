@@ -313,8 +313,6 @@ td {
 	line-height: 1.5;
   }
 
-
-
   thead {
 	background: #0CBCAE;
 	background: linear-gradient(#0CBCAE, #293f50);
@@ -486,6 +484,10 @@ font-weight: 600;
 	background-color: #0cbcad9d;
 	padding: 10px;
 	margin: 7px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-content: flex-start;
 
 }
 
@@ -493,7 +495,6 @@ font-weight: 600;
 	border: 1px solid rgba(0, 0, 0, 0.483);
 	margin: 10px;
 	padding: 15px;
-	width: 800px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -501,28 +502,95 @@ font-weight: 600;
 	align-content: flex-start;
 
 }
+
 .label-font{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 20px;
 	padding: 2px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	margin-left: 2px;
+	
+}
+
+.contenedor-invisible{
+	border: none;
+	margin: 2px;
+	padding-left: 0;
+	width: 900px;
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+}
+.gender-check{
+	display: flex;
+	justify-content: flex-end;
+	width: 150px;
+
+
+}
+.input-font-radio{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	padding: 2px;
+	margin-left: 2px;
+	width: 250px;
+	display: inline-block;
+}
+
+.label-font-radio{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	padding: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 2px;
+	display: inline-block;
 }
 .input-font{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
 	padding: 2px;
+	margin-left: 2px;
+	width: 100%;
+	flex-grow: 1;
+}
+
+
+
+.title-font{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+	font-weight: 400;
+	display: block;
+	width: 75px;
+	
+}
+
+.title-font-bold{
+	font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+	margin-right: 50px;
+	font-weight: 600;
+	display: flex;
+	align-self: center;
 }
 .input-size{
-	width: 612px;
+	width: 150px;
 }
 
 .label-font-small{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 17px;
 	padding: 2px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 7px;
+	margin-bottom: 2px;
 }
 
 /* *seccion de mostrar elementos enviados del formulario */
