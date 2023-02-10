@@ -14,16 +14,17 @@ body {
 /* & Estilos para la imagen banner de fondo */
 .fondo {
 	background-image: url(../img/recorte.jpg);
-	background-repeat: no-repeat;
+	background-repeat:repeat;
 	padding: 20px;
 	margin-top: 100px;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 3%;
+	margin-right: 3%;
 	object-fit: cover;
 	height: 250px;
 	margin-bottom: 10px;
 	border-radius: 9px;
 	box-shadow: 0px 0px 5px 1px black;
+	
 }
 
 /* & Imagen del logo sin letras*/
@@ -53,7 +54,15 @@ body {
 	top: 1px;
 	left: 20px;
 	z-index: 1;
+}
 
+.alineacion-flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+    align-items: flex-start;
 }
 
 /* & Barra de navegación contenedor*/
@@ -85,6 +94,7 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	align-self: center;
+
 }
 
 .btn:hover {
@@ -93,14 +103,37 @@ body {
 	background-color: #f6e352;
 }
 
+
 /* ?Elegimos el posicionamiento de nuestro logo */
 .logo {
 	width: 140px;
-	display: inline-block;
-	position: absolute;
-	left: 60px;
-	top: 400px;
 }
+
+.container-2{
+	margin-top: 20px;
+	padding: 10px;
+	margin-bottom: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+
+.container-3{
+	margin-right: 250px;
+	margin-left: 30px;
+	margin-top: 20px;
+	padding: 10px;
+	margin-bottom: 5px;
+	border-left: 3px solid #414646;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	
+}
+
+
 
 /* & titulo del h2 - Eventos próximos*/
 .title-2 {
@@ -129,7 +162,7 @@ body {
 
 /* & Envoltorio de los elementos del section*/
 .container {
-	width: 1250px;
+	width: 1000px;
 	margin-right: 250px;
 	margin-left: 180px;
 	margin-top: 20px;
@@ -170,7 +203,7 @@ body {
 
 /* !seccion de ABOUT */
 .container-about {
-	margin-left: 150px;
+	margin-left: 180px;
 	margin-top: 20px;
 	padding: 10px;
 	margin-bottom: 5px;
@@ -205,7 +238,7 @@ body {
 	margin-bottom: 10px;
 	line-height: 1.5;
 	text-align: justify;
-
+	width: 1000px;
 	flex-basis: 50px;
 }
 
@@ -267,7 +300,7 @@ body {
 	color: whitesmoke;
 	margin: 15px;
 }
-
+/* *pagina de contacto */
 .contact {
 	display: block;
 	text-align: left;
@@ -278,6 +311,8 @@ body {
 	margin-left: 20px;
 	padding: 10px;
 	margin-bottom: 5px;
+	font-weight: 600;
+	width: 900px;
 }
 
 .sangria {
@@ -286,7 +321,7 @@ body {
 
 /* & ESTILO PARA TABLAS */
 .container-table {
-	margin-top: 10px;
+	margin-top: 2px;
 	margin-bottom: 50px;
 
 }
@@ -392,7 +427,7 @@ td:first-child {
 /* *RULES ANDO POLITIQUES  */
 .container-rules {
 	margin-left: 150px;
-	margin-top: 20px;
+	margin-top: 10px;
 	padding: 10px;
 	margin-bottom: 5px;
 	border-left: 3px solid #414646;
@@ -412,7 +447,16 @@ td:first-child {
 	padding: 5px;
 	
 }
+.container-rules-titulo {
 
+	margin-top: 10px;
+	padding: 10px;
+	margin-bottom: 5px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
 .title-rules {
 	text-align: left;
 	color: rgb(12, 188, 174);
@@ -531,13 +575,31 @@ form {
 }
 
 /* styles.css */
+
+.container-formulario {
+	margin-left: 150px;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-left: 3px solid #414646;
+	border-top: 3px solid #414646;
+	border-bottom: 3px solid #414646;
+	border-right: 3px solid #414646;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: center;
+	
+}
 .flex-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
 	align-content: flex-start;
-	width: 100%;
+	width: 90%;
 	overflow: auto;
 	flex-direction: row;
 	margin-top: 20px;
@@ -873,15 +935,12 @@ fieldset {
 	}
 
 }
-
 .modal-img {
 	width: 100%;
 	display: block;
 
 }
-
 /* *modal 3 */
-
 .modal-3 {
 	position: fixed;
 	top: 0;
@@ -897,31 +956,25 @@ fieldset {
 	opacity: var(--opacity);
 	pointer-events: var(--pointer);
 	transition: opacity .5s;
-
 }
-
 .modal-3:target {
 	--opacity: 1;
 	--pointer: unset;
 
 }
-
 .modal-3:target .modal-container {
 
 	animation: show 1s .5s backwards;
 }
-
 @keyframes show {
 	0% {
 		transform: translateY(-150vh);
 	}
 
 }
-
 .modal-3:target .modal-picture {
 	animation: scale .5s 1.5s backwards;
 }
-
 @keyframes scale {
 	0% {
 		transform: scale(0);
@@ -1030,4 +1083,257 @@ fieldset {
 
 }
 
-/* *MODAL 6  */
+/* *Media Queries - pantalla minima del celu*/
+
+@media (min-width: 375px) and (max-width:768px) {
+	
+	body {
+		background: rgba(245, 245, 245, 0.719);
+		}
+	
+	/* & Estilos para la imagen banner de fondo */
+	.fondo {
+		background-image: url(../img/recorte.jpg);
+		background-repeat: no-repeat;
+		margin-top: 100px;
+		width: 170%;
+		object-fit: cover;
+		margin-bottom: 2%;
+		margin-left: 6%;
+		border-radius: 2px;
+		box-shadow: 0px 0px 5px 1px black;
+		
+	}
+	
+	/* & Imagen del logo sin letras*/
+	.img-logo-nav {
+		width: 50px;
+		padding-right: 1px;
+		display: inline-block;
+		position: absolute;
+		top: 13px;
+		z-index: 1;
+	}
+	
+	/* & Estilo del titulo h1  */
+	.title {
+		margin-left: 70px;
+		margin-top: 20px;
+		color: #f6e352;
+		font-family: 'Anton', sans-serif;
+		font-size: 20px;
+		word-spacing: 4px;
+		text-transform: uppercase;
+		display: inline-block;
+		position: absolute;
+		top: 1px;
+		left: 4px;
+		z-index: 1;
+	}
+	
+	.alineacion-flex{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+		align-items: flex-start;
+	}
+	
+	/* & Barra de navegación contenedor*/
+	.navegador {
+		width: 100%;
+		height: 80px;
+		background-color: black;
+		top: 0px;
+		left: 0px;
+		position: fixed;
+		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content: flex-end;
+	}
+	
+	/* & Botones de navegación y efectos */
+	.btn {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		font-family: 'Lato', "Sans-serif";
+		font-weight: 700;
+		padding: 2px;
+		padding-left: 5x;
+		margin-right: 15px;
+		background-color: black;
+		text-transform: uppercase;
+		text-decoration: none;
+	
+	}
+	
+	.btn:hover {
+		color: black;
+		font-weight: 800;
+		background-color: #f6e352;
+	}
+		/* ?Elegimos el posicionamiento de nuestro logo */
+	.logo {
+		width: 80px;
+	}
+	
+	.container-2{
+		margin-top: 20px;
+		padding: 10px;
+		margin-bottom: 5px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
+	
+	.container-3{
+		margin-right: 250px;
+		margin-left: 30px;
+		margin-top: 20px;
+		padding: 10px;
+		margin-bottom: 5px;
+		border-left: 3px solid #414646;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		
+	}
+	
+	
+	
+	/* & titulo del h2 - Eventos próximos*/
+	.title-2 {
+		width: 100%;
+		text-align: center;
+		background: linear-gradient(to right, #414345, #232526);
+		color: whitesmoke;
+		font-family: 'Lato', sans-serif;
+		font-size: 25px;
+		word-spacing: 4px;
+	
+	}
+	
+	/* & Envoltorio de los elementos del section*/
+	.wrapped {
+		width:110%;
+		background: whitesmoke;
+		padding-bottom: 2%;
+		margin-top: 3%;
+		margin-left: 15%;
+		box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.482);
+	}
+	
+	/* & Envoltorio de los elementos del section*/
+	.container {
+		width: 100%;
+		margin-right: 2%;
+		margin-left: 19%;
+		margin-top: 20px;
+		padding: 10px;
+		margin-bottom: 5px;
+		border-left: 3px solid #414646;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	
+	/* & titulo de los articles*/
+	.title-3 {
+		text-align: left;
+		color: black;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 20px;
+		margin-left: 20px;
+		padding: 5px;
+	
+	}
+	
+	/* & parrafos y efecto de posicionamiento*/
+	.parrafo {
+		color: rgb(5, 125, 125);
+		font-family: "Lato", sans-serif;
+		font-weight: 600;
+		font-size: 15px;
+		margin-right: 20px;
+		margin-left: 20px;
+		padding: 5px;
+		margin-bottom: 10px;
+		line-height: 1.5;
+		text-align: justify;
+	
+	}
+	
+/* & espaciado de los contenidos del main*/
+.espaciado {
+	width: 148%;
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/* & estilos del footer*/
+.beatiful-footer {
+	position: absolute;
+	margin-right: 19%;
+	padding-bottom: 44px;
+	padding-top: 30px;
+	border-bottom: 50px solid whitesmoke;
+	width: 190%;
+	height: 260px;
+	background-color: black;
+	margin-top: 20px;
+
+}
+/* *modificado hasta aca */
+.title-4 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 30px;
+	margin-bottom: 10px;
+	text-align: left;
+	color: whitesmoke;
+	display: block;
+	margin-left: 10px;
+}
+
+.contenedor-2 {
+	width: max-content;
+	position: absolute;
+	justify-content: center;
+	left: 200px;
+	border-left: 6px solid white;
+}
+
+.contenedor-icon {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.icons {
+	color: whitesmoke;
+	margin: 15px;
+}
+
+	}
+
+
+	@media (min-width: 768px) and (max-width:1440px) {
+	
+		.container{
+			width: 100%;
+			padding-left: 20px;
+			flex-direction: column;
+		}
+	
+	
+		}
