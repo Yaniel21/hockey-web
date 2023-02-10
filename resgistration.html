@@ -63,215 +63,217 @@
 				<section>
 					<h2 class="titulo-principal-rules">Registration Form</h2>
 					<p class="parrafo-rules">Complete the following player registration form.</p>
-					<!-- 		<article> -->
+
 					<div class="container-form-wrapped">
-						<form action="/show_data.html" method="get">
-							<!-- *Datos personales -->
-
-							<div class="datos-personales">
-								<label for="first-name" class="label-font">Player's first Name
-									<input type="text" name="first-name" id="first-name" class="input-font">
-								</label>
+						<form action="show_data.html" method="get">
+							<!-- *Datos personales - CONTENEDOR PADRE-->
+							<fieldset>
+								<div class="flex-container">
 								
+										<label for="first-name" class="label-font">Player's first Name</label>
+										<input type="text" name="first-name" id="first-name" class="input-font">
+	
+										<label for="last-name" class="label-font">Last Name</label>
+										<input type="text" name="last-name" id="last-name" class="input-font">
+								</div>
 
-								<label for="last-name" class="label-font">Last Name 
-									<input type="text" name="last-name" id="last-name" class="input-font">
-								</label>
-								
+							</fieldset>
 
-								<label for="street-adress" class="label-font">Street Adress
-									<input type="text" name="street-adress" id="street-adress" class="input-font">
-								</label>
-								
-
-								<label for="city" class="label-font">City
-									<input type="text" name="city" id="city" class="input-font">
-								</label>
-								
-
-								<label for="zip-code" class="label-font">Zip Code
-									<input type="text" name="zip-code" id="zip-code" class="input-font">
-								</label>
-								<label for="date" class="label-font-radio">Date
-									<input type="date" name="date" id="date" class="input-font-radio">
-								</label>
+							<!-- *Coloco en un contenedor padre a los hijos para que ocupen todo el contenedor -->
+							<div class="flex-container">
+								<label for="street-adress" class="label-font">Street Adress</label>
+								<input type="text" name="street-adress" id="street-adress" class="input-font size">
 							</div>
-						
 
-							<div class="datos-personales">
-								<fieldset class="contenedor-invisible">
+							<!-- *Coloco en un contenedor padre a los hijos para que ocupen todo el contenedor -->
+
+							<div class="flex-container">
+								<label for="city" class="label-font">City</label>
+								<input type="text" name="city" id="city" class="input-font">
+
+								<label for="zip-code" class="label-font">Zip Code</label>
+								<input type="text" name="zip-code" id="zip-code" class="input-font">
+
+								<label for="dates" class="label-font">Date</label>
+								<input type="date" name="dates" id="dates" class="input-font">
+
+							</div>
+							<!-- *Coloco en un contenedor padre a los hijos para que ocupen todo el contenedor -->
+							<div class="flex-container">
+
+								<fieldset>
 									<h3 class="title-font">Gender</h3>
-									<div class="gender-check">
+									<div class="gender-check ">
 										<label for="gender-female" class="label-font-small">Female</label>
 										<input type="radio" name="gender" id="gender-female" value="Female"
-												class="">
-
+											class="label-font-small">
 									</div>
-									
+
 									<div class="gender-check">
 
 										<label for="gender-male" class="label-font-small">Male</label>
 										<input type="radio" name="gender" id="gender-male" value="Male"
-										class="">
+											class="label-font-small">
 									</div>
 
 								</fieldset>
 							</div>
-							<div class="datos-personales">
-								<!-- * grado -->
+							<!-- *Coloco en un contenedor padre a los hijos para que ocupen todo el contenedor -->
+							<!-- * SECCION DE grado -->
+							<div class="flex-container">
 
-								<fieldset class="contenedor-invisible">
+								<fieldset>
 									<h2 class="title-font">Grade</h2>
 									<div class="gender-check">
-										<label for="pre-school" class="label-font">Pre-school
-						
-										</label>
-	
+										<label for="pre-school" class="label-font-small">Pre-school</label>
 										<input type="radio" name="grade" value="pre-school" id="pre-school"
-										class="">
-	
+											class="label-font-small">
+
 									</div>
-									
-			
+									<div class="gender-check">
+										<label for="1-first" class="label-font-small">1first</label>
+										<input type="radio" name="grade" value="1first" id="1-first"
+											class="label-font-small">
 
-									<label for="1-first" class="label-font-small">1first</label>
-									<input type="radio" name="grade" value="1first" id="1-first"
-										class="">
+										<label for="2-nd" class="label-font-small">2nd</label>
+										<input type="radio" name="grade" value="2nd" id="2-nd" class="label-font-small">
 
-									<label for="2-nd" class="label-font-small">2nd</label>
-									<input type="radio" name="grade" value="2nd" id="2-nd"
-										class=".input-font-radius-checkbox">
+										<label for="3-rd" class="label-font-small">3rd</label>
+										<input type="radio" name="grade" value="3rd" id="3-rd" class="label-font-small">
 
-									<label for="3-rd" class="label-font-small">3rd</label>
-									<input type="radio" name="grade" value="3rd" id="3-rd"
-										class=".input-font-radius-checkbox">
+										<label for="4-th" class="label-font-small">4th</label>
+										<input type="radio" name="grade" value="4th" id="4-th" class="label-font-small">
 
-									<label for="4-th" class="label-font-small">4th</label>
-									<input type="radio" name="grade" value="4th" id="4-th"
-										class=".input-font-radius-checkbox">
-
-									<label for="5-th" class="label-font-small">5th</label>
-									<input type="radio" name="grade" value="5th" id="5-th"
-										class=".input-font-radius-checkbox">
-
+										<label for="5-th" class="label-font-small">5th</label>
+										<input type="radio" name="grade" value="5th" id="5-th" class="label-font-small">
+									</div>
 								</fieldset>
+							</div>
+							<!-- & sección de las escuelas -->
+							<div>
+								<section>
+									<h2 class="title-font-bold">Wich elementary school do you live near?</h2>
+									<p class="parrafo-formulario">Closets School</p>
+								</section>
+								<div class="flex-container">
 
-
-								<fieldset class="datos-personales">
-									<h2 class="title-font-bold">Wich elementary scholl do lou live near?</h2>
-									<p class="title-font">Closets School</p>
-									<!-- *colocar la clase correspondiente -->
-									<div class="">
+									<div class="content">
 										<input type="checkbox" name="school" id="aj_katzen" value="AJ Katzen"
-											class="input-font-radius-checkbox">
+											class="label-font">
 										<label class="label-font" for="aj_katzen">AJ Katzen</label>
 
 										<input type="checkbox" name="school" id="greenbay" value="Greenbay"
-											class="input-font-radius-checkbox">
+											class="label-font">
 										<label class="label-font" for="greenbay">Greenbay</label>
 
 										<input type="checkbox" name="school" id="howard" value="Howard A Yeager"
-											class="input-font-radius-checkbox">
+											class="label-font">
 										<label class="label-font" for="howard">Howard A Yeager</label>
-
 										<input type="checkbox" name="school" id="marjorie" value="Marjorie P Hart"
-											class="input-font-radius-checkbox">
+											class="label-font">
 										<label class="label-font" for="marjorie">Marjorie P Hart</label>
 
 										<input type="checkbox" name="school" id="north" value="North Elementary"
-											class="input-font-radius-checkbox">
+											class="label-font">
 										<label class="label-font" for="north">North Elementary </label>
 
 										<input type="checkbox" name="school" id="south" value="South Elementary"
-											class="input-font-radius-checkbox">
+											class="label-font">
 										<label class="label-font" for="south">South Elementary</label>
-
 									</div>
-
-								</fieldset>
-
-
-								<fieldset class="datos-personales">
-									<h2>What position(s) do you normally play?</h2>
-									<h3>(check all that apply)</h3>
-									<!-- *colocar la clase correspondiente -->
-									<div class="">
-										<input type="checkbox" name="position" id="forward" value="Forward">
-										<label class="label-font" for="forward">Forward</label>
-
-										<input type="checkbox" name="position" id="defense" value="Defense">
-										<label class="label-font" for="defense">Defense</label>
-
-										<input type="checkbox" name="position" id="midfield" value="Midfield">
-										<label class="label-font" for="midfield">Midfield</label>
-
-										<input type="checkbox" name="position" id="goalkeeper" value="Goalkeeper">
-										<label class="label-font" for="goalkeeper">Goalkeeper</label>
-
-									</div>
-
-								</fieldset>
-
-								<fieldset class="datos-personales"><!--* poner un mejor estilo -->
-									<h2>Uniform Size</h2>
-									<input type="radio" name="size" value="yes" id="youth-small">
-									<label class="label-font" for="youth-small">Youth Small</label>
-
-									<input type="radio" name="size" value="Youth Medium" id="youth-medium">
-									<label class="label-font" for="youth-medium">Youth Medium </label>
-
-									<input type="radio" name="size" value="Youth Large" id="youth-large">
-									<label class="label-font" for="youth-large">Youth Large</label>
-
-									<input type="radio" name="size" value="Small" id="small">
-									<label class="label-font" for="small">Small</label>
-
-									<input type="radio" name="size" value="Medium" id="medium">
-									<label class="label-font" for="medium">Medium</label>
-
-									<input type="radio" name="size" value="Large" id="large">
-									<label class="label-font" for="large">Large</label>
-
-									<input type="radio" name="size" value="Extra Large" id="extra-large">
-									<label class="label-font" for="extra-large">Extra Large</label>
-
-								</fieldset>
-
-								<fieldset>
-									<h2>Permission to Play</h2>
-									<p>
-										Permission to Play
-										I, the parent or guardian of the minor registrant, agree that the registrant
-										and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL).
-										In recognizing the possibility of physical injury associated with hockey and
-										in consideration for the “League" accepting the registrant for its hockey
-										programs and activities, I hereby release, discharge, and/or otherwise
-										indemnify MDHL, their employees and associated personnel and
-										voIunteers,incIuding the facilities used for practices and games, against
-										any claim by or on behalf of the registrant as a result of the registrant's
-										participation in the programand/orbeing transported to or from MDHL
-										sponsored activities,which transportation
-										By signing below, I herebyagree andauthorizethe above.In addition, by
-										signing below, lalso
-										acknowledge that I have read the cancellation policy and agree to its terms.
-									</p>
-									<label for="parent" class="label-font">Parent/GuardianSignature</label>
-									<input type="text" name="parent" id="parent" value="">
-
-									<label for="date-permission">Date</label>
-									<input type="datetime-local" name="date-permission" id="date-permission">
-								</fieldset>
-								<div>
-									<input type="submit" value="Confirmar Registro">
 								</div>
+							</div>
+							<!-- *posiciones corespondientes -->
+							<div>
+								<section>
+									<h2 class="title-font-bold">What position(s) do you normally play?</h2>
+									<p class="parrafo-formulario">(check all that apply)</p>
+								</section>
+								<div class="flex-container">
+									<div class="content">
 
+										<label class="label-font" for="forward"><input type="checkbox" name="position"
+												id="forward" value="Forward">Forward</label>
+
+										<label class="label-font" for="defense"><input type="checkbox" name="position"
+												id="defense" value="Defense">Defense</label>
+
+										<label class="label-font" for="midfield"><input type="checkbox" name="position"
+												id="midfield" value="Midfield">Midfield</label>
+
+										<label class="label-font" for="goalkeeper"><input type="checkbox"
+												name="position" id="goalkeeper" value="Goalkeeper">Goalkeeper</label>
+									</div>
+								</div>
+							</div>
+							<!-- *Uniforme-->
+							<div>
+								<section>
+									<h2 class="title-font-bold">Uniform Size</h2>
+								</section>
+
+								<div class="flex-container">
+									<div class="content">
+										<input type="radio" name="size" value="yes" id="youth-small" class="label-font">
+										<label class="label-font" for="youth-small">Youth Small</label>
+
+										<input type="radio" name="size" value="Youth Medium" id="youth-medium"
+											class="label-font">
+										<label class="label-font" for="youth-medium">Youth Medium </label>
+
+										<input type="radio" name="size" value="Youth Large" id="youth-large"
+											class="label-font">
+										<label class="label-font" for="youth-large">Youth Large</label>
+
+										<input type="radio" name="size" value="Small" id="small" class="label-font">
+										<label class="label-font" for="small">Small</label>
+
+										<input type="radio" name="size" value="Medium" id="medium" class="label-font">
+										<label class="label-font" for="medium">Medium</label>
+
+										<input type="radio" name="size" value="Large" id="large" class="label-font">
+										<label class="label-font" for="large">Large</label>
+
+										<input type="radio" name="size" value="Extra Large" id="extra-large"
+											class="label-font">
+										<label class="label-font" for="extra-large">Extra Large</label>
+
+									</div>
+								</div>
+							</div>
+							<!-- *permiso para jugar -->
+							<div>
+								<h2 class="title-font-bold">Permission to Play</h2>
+								<p class="parrafo-formulario-2">
+									Permission to Play
+									I, the parent or guardian of the minor registrant, agree that the registrant
+									and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL).
+									In recognizing the possibility of physical injury associated with hockey and
+									in consideration for the “League" accepting the registrant for its hockey
+									programs and activities, I hereby release, discharge, and/or otherwise
+									indemnify MDHL, their employees and associated personnel and
+									voIunteers,incIuding the facilities used for practices and games, against
+									any claim by or on behalf of the registrant as a result of the registrant's
+									participation in the programand/orbeing transported to or from MDHL
+									sponsored activities,which transportation
+									By signing below, I herebyagree andauthorizethe above.In addition, by
+									signing below, lalso
+									acknowledge that I have read the cancellation policy and agree to its terms.
+								</p>
+
+								<div class="flex-container">
+										<label for="parent" class="label-font">Parent/GuardianSignature <input type="text" name="parent" id="parent" class="label-font" value=""></label>
+										<label for="date-permission" class="label-font">Date <input type="datetime-local" name="date-permission" class="label-font" id="date-permission"></label>
+								</div>
 							</div>
 
-
+							<div class="flex-container-2">
+								<input type="submit" value="Confirmar Registro" class="btn-max">
+							</div>
 
 						</form>
 					</div>
-					<!-- 	</article> -->
+
 				</section>
 			</div>
 		</section>
